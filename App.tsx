@@ -4,6 +4,8 @@ import { NavigationContainer } from '@react-navigation/native';
  import DespesaForm from './screens/AddDespesa';
  import DespesaLista from './screens/ListDespesa';
 
+//teste
+
  const Tab = createBottomTabNavigator();
 
  export default function App() {
