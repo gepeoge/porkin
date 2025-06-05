@@ -11,7 +11,7 @@ import { NavigationContainer } from '@react-navigation/native';
  export default function App() {
      return (
      <NavigationContainer>
-         <Tab.Navigator initialRouteName='ListaDespesas'>
+         <Tab.Navigator initialRouteName='ListDespesa'>
          <Tab.Screen name='ListDespesa'
              options={{title: 'Minhas Despesas'}}
              component={DespesaLista} />
