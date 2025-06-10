@@ -1,14 +1,13 @@
 export class Despesa{
     codigo: number;
-    descricao: string;
-    categoria: string;
+    desc: string;
     valor: number;
-    data: Date;
-    constructor (codigo: number, descricao: string, categoria: string, valor: number){
+    data: string;
+    constructor(codigo: number, desc: string, valor: number, data: string){
+        
         this.codigo = codigo;
-        this.descricao = descricao;
-        this.categoria = categoria;
+        this.desc = desc;
         this.valor = valor;
-        this.data = new Date();
+        this.data = data;
     }
 }

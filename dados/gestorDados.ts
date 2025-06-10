@@ -1,5 +1,5 @@
-import db from './databaseInstance';
- import { Despesa } from './despesa';
+import db from './DatabaseInstance';
+ import { Despesa } from './Despesa';
 
  class GestorDados {
      public async remover(chave: string){
