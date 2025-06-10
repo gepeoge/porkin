@@ -1,15 +1,16 @@
 import Realm from 'realm';
 
  var db = new Realm({
-     path: 'ProdutosDB.realm',
+     path: 'DespesasDB.realm',
      schema: [
          {
-         name: 'Produto',
+         name: 'Despesa',
          primaryKey: 'codigo',
          properties: {
              codigo: 'int',
-             nome: 'string',
-             quantidade: 'int'
+             desc: 'string',
+             data: 'string',
+             valor: 'float'
          }
          }
      ]

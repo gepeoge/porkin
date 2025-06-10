@@ -1,10 +1,8 @@
 import { NavigationContainer } from '@react-navigation/native';
- import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
- import React from 'react';
- import DespesaForm from './screens/AddDespesa';
- import DespesaLista from './screens/ListDespesa';
-
-//teste
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import React from 'react';
+import DespesaForm from './DespesaForm';
+import DespesaLista from './DespesaLista';
 
  const Tab = createBottomTabNavigator();
 
@@ -12,12 +10,12 @@ import { NavigationContainer } from '@react-navigation/native';
      return (
      <NavigationContainer>
          <Tab.Navigator initialRouteName='ListaDespesas'>
-         <Tab.Screen name='ListDespesa'
+         <Tab.Screen name='ListaDespesas'
              options={{title: 'Minhas Despesas'}}
-             component={DespesaLista} />
-         <Tab.Screen name='AddDespesa'
+             component={DespesaLista}/>
+         <Tab.Screen name='NovaDespesa'
              options={{title: 'Nova Despesa'}}
-             component={DespesaForm} />
+             component={DespesaForm}/>
          </Tab.Navigator>
      </NavigationContainer>
      );
